@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    style="@style/ThemeOverlay.AppCompat.Dark">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movies"
+        android:layout_marginTop="210dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="55sp"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="serif-monospace"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&amp;"
+        android:layout_marginTop="245dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="60sp"
+        android:layout_marginLeft="110dp"
+        android:layout_gravity="center"
+        android:fontFamily="serif-monospace"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tv Shows"
+        android:layout_marginTop="280dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="55sp"
+        android:layout_marginLeft="60dp"
+        android:layout_gravity="center"
+        android:fontFamily="serif-monospace"/>
+
+</RelativeLayout>

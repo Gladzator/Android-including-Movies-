@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">The Box</string>
+
+    <string-array name="TypeofMovieList">
+        <item>Select</item>
+        <item>Now Playing</item>
+        <item>Upcoming</item>
+        <item>Top Rated</item>
+    </string-array>
+
+    <string-array name="TypeofTvList">
+        <item>Select</item>
+        <item>Popular</item>
+        <item>Airing Today</item>
+        <item>On Air</item>
+        <item>Top Rated</item>
+    </string-array>
+
+</resources>

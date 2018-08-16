@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp">
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:hint="Write your note here!!!"
+        android:scrollbars="vertical"
+        android:outlineProvider="background"/>
+
+</LinearLayout>

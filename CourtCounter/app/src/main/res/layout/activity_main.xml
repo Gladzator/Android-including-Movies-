@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.courtcounter.MainActivity">
+    <LinearLayout
+        android:id="@+id/TeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="56sp"
+        android:layout_marginTop="16dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Team A"
+    android:fontFamily="sans-serif-medium"
+    android:paddingLeft="10sp"
+    android:textSize="20dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:paddingLeft="40sp"
+        android:textSize="40dp"
+        android:paddingBottom="24dp"
+        android:id="@+id/pointsa"
+        android:textColor="#000"/>
+    <Button
+        android:id="@+id/A3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+3 Points"
+        android:layout_marginBottom="8dp"
+        android:onClick="A3"
+        android:background="#FFC107"/>
+    <Button
+        android:id="@+id/A2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+2 Points"
+        android:layout_marginBottom="8dp"
+        android:onClick="A2"
+        android:background="#FFC107"/>
+    <Button
+        android:id="@+id/A1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FREE THROW"
+        android:layout_marginBottom="54dp"
+        android:onClick="A1"
+        android:background="#FFC107"/>
+        </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="175dp"
+        android:layout_marginBottom="200dp"
+        android:layout_marginTop="16dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:paddingRight="65sp"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="20dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="10sp"
+            android:paddingTop="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="40dp"
+            android:paddingBottom="24dp"
+            android:paddingLeft="40sp"
+            android:id="@+id/pointsb"
+            android:textColor="#000" />
+        <Button
+            android:id="@+id/B3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 Points"
+            android:layout_marginBottom="8dp"
+            android:onClick="B3"
+            android:background="#FFC107"/>
+        <Button
+            android:id="@+id/B2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+2 Points"
+            android:layout_marginBottom="8dp"
+            android:onClick="B2"
+            android:background="#FFC107"/>
+        <Button
+            android:id="@+id/B1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FREE THROW"
+            android:layout_marginBottom="8dp"
+            android:onClick="B1"
+            android:background="#FFC107"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:text="Reset"
+        android:onClick="Reset"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="140sp"
+        android:background="#FFC107"/>
+    </RelativeLayout>

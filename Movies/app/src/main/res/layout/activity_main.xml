@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.example.com.movies.MainActivity"
+    android:background="#000"
+    android:id="@+id/drawerLayout">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:id="@+id/toolbar"
+    android:background="#424242">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movies"
+        android:id="@+id/toolbar_title"
+        android:gravity="start"
+        android:textSize="20sp"
+        android:textColor="#BDBDBD"/>
+
+    <Spinner
+        android:id="@+id/movieTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="end"
+        android:background="#424242"
+        android:popupBackground="#424242">
+    </Spinner>
+</android.support.v7.widget.Toolbar>
+<com.miguelcatalan.materialsearchview.MaterialSearchView
+    android:id="@+id/search_movies"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:searchBackground="@color/colorPrimary"
+    app:searchSuggestionBackground="@color/colorPrimary"
+    app:searchBackIcon="@drawable/ic_arrow_back_white_24dp"
+    app:searchCloseIcon="@drawable/ic_close_white_24dp"
+    app:searchSuggestionIcon="@drawable/ic_suggestion"
+    android:textColor="#BDBDBD"
+    android:textColorHint="#BDBDBD"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/noNetImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BDBDBD"/>
+        <TextView
+            android:id="@+id/noNetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#BDBDBD"/>
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/popularmovielist"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/drawer_head"
+        android:background="@color/colorPrimary"
+        app:itemTextColor="#BDBDBD">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

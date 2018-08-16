@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.example.com.budget.MainActivity"
+    android:orientation="vertical">
+
+//go to xamarin card view to get info
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="38sp"
+                android:textColor="#000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date_range_black_24dp"
+                android:background="@null"
+                android:layout_marginTop="72dp"
+                android:layout_marginLeft="20dp"/>
+                    <TextView
+                        android:layout_marginLeft="5sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Go to Date"
+                        android:textColor="@color/colorPrimaryDark"/>
+                </LinearLayout>
+                    <Button
+                android:id="@+id/enterdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Entry"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:background="@null"
+                android:textColor="@color/colorPrimaryDark"/>
+
+                <Button
+                    android:id="@+id/editdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Details"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="13sp"
+                    android:background="@null"
+                    android:textColor="@color/colorPrimaryDark"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="25sp">
+
+                <ImageButton
+                    android:id="@+id/analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_poll_black_24dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Detailed Analysis"
+                        android:textColor="@color/colorPrimaryDark"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <fragment
+        android:name="android.example.com.budget.BlankFragment"
+        android:id="@+id/fragment"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+    </fragment>
+
+</LinearLayout>

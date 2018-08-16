@@ -1,0 +1,16 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Just Java</string>
+
+    <!-- Header text for list toppings -->
+    <string name="toppings">Toppings</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="Name">Name</string>
+    <string name="WhippedCream">Whipped Cream</string>
+    <string name="Chocolate">Chocolate</string>
+    <string name="Quantity">Quantity:</string>
+    <string name="Order">Order</string>
+    <string name="whipcream">Add Whipped Cream?</string>
+    <string name="choc">Add Chocolate?</string>
+    <string name="order_summary_name">Name: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="quantity_text_view">Quantity:</string>
+</resources>
